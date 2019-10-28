@@ -15,6 +15,12 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Backend\DB_Anbindung.php" />
+    <Compile Include="Frontend\LoginGUI.php" />
     <Compile Include="index.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Frontend\" />
+    <Folder Include="Backend\" />
   </ItemGroup>
 </Project>
