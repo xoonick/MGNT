@@ -1,3 +1,12 @@
-﻿<?php
+<!DOCTYPE html>
+<script>
+</script>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Index Page</title>
+    </head>
+    <body>
 
-echo 'Hello Framework!';
+    </body>
+</html>

@@ -22,5 +22,6 @@
   <ItemGroup>
     <Folder Include="Frontend\" />
     <Folder Include="Backend\" />
+    <Folder Include="DB_Script\" />
   </ItemGroup>
 </Project>
