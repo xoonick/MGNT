@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "MGNT", "..\..\..\..\..\Users\U1349\source\repos\MGNT\MGNT\MGNT.phpproj", "{2A2A4CE1-F6FD-420A-A655-E18BFE4E9A0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A2A4CE1-F6FD-420A-A655-E18BFE4E9A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A2A4CE1-F6FD-420A-A655-E18BFE4E9A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9C05C14-63A6-4380-8D7A-5EA3A8995BC5}
+	EndGlobalSection
+EndGlobal
