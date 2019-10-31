@@ -21,11 +21,12 @@ define('MYSQL_KENNWORT', '');
 // 2 parameter entspricht dem Tabellennamen
 define('MYSQL_DATENBANK', 'user');
 
-$db_link = mysqli_connect(
+$db_link =  new mysqli(
                 MySQL_HOST,
                 MYSQL_BENUTZER,
                 MYSQL_KENNWORT,
-                MYSQL_DATENBANK
+                MYSQL_DATENBANK,
+                3306
           );
 
 // check the DB connection
@@ -40,7 +41,7 @@ function checkConnection() {
 }
 
 // Insert
-function insertInto() {
+function insertInto($table) {
     global $db_link;
 
     $sql_insert = "INSERT INTO `TABELLE` (`SPALTE`) VALUES (`WERTE`)";
@@ -50,7 +51,7 @@ function insertInto() {
 }
 
 // Get ID from last insert
-function getIdOfLastInsert() {
+function getIdOfLastInsert($table) {
     global $db_link;
 
     $sql_select_last_insert_id = "SELECT ID FROM `TABELLE` ORDER BY DESC LIMIT 1";
@@ -62,10 +63,13 @@ function getIdOfLastInsert() {
     return $lastId = $tempVar->ID;
 }
 
-function checkLogin($username, $password) {
+function checkLogin($table, $username, $password) {
     global $db_link;
 
-    $sql_check_login = "SELECT `userID` FROM `user` WHERE `username` = " . $username . "and `password` = " . $password . "";
+    $sql_statement = $dblink->prepare("SELECT `userID` FROM `user` WHERE `username` = ? and `password` = ?");
+
+    $sql_statement->bindParam('ss', $username, $password);
+
 
     $resultCheckLogin = $db_link->query($sql_check_login)
         or die('Anfrage fehlgeschlagen: ' . mysqli_error($db_link));

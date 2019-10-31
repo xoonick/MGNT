@@ -8,6 +8,11 @@
  * @version 1.0
  * @author U1349
  */
-class LoginGUI
-{
-}
+?>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Index Page</title>
+    </head>
+</html>
